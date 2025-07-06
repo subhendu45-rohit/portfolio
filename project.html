@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}Projects - Portfolio{% endblock %}
+
+{% block content %}
+<section class="project-section" style="
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+">
+
+    <h1 style="text-align: center; font-size: 36px; margin-bottom: 30px; letter-spacing: 1px;">🚀 My Projects</h1>
+
+    <div class="project-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+
+        <div class="project" style="
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        " onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 25px rgba(255,255,255,0.2)'" 
+           onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+            <h3 style="color: #00c6ff;">🌟 Portfolio Website</h3>
+            <p>Built with Flask, HTML, CSS. Showcases personal info and projects.</p>
+        </div>
+
+        <div class="project" style="
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        " onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 25px rgba(255,255,255,0.2)'" 
+           onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+            <h3 style="color: #ff512f;">🚉 Raildrop</h3>
+            <p>A modern web app using HTML, CSS, and JavaScript.</p>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

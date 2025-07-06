@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block title %}About - Portfolio{% endblock %}
+
+{% block content %}
+<section class="about-section" style="
+    max-width: 950px; 
+    margin: 50px auto; 
+    background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364); 
+    color: #f1f1f1; 
+    padding: 50px; 
+    border-radius: 25px; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.7); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+"
+    onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 25px 60px rgba(0,255,255,0.4)';" 
+    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.7)';"
+>
+
+    <h1 style="
+        font-size: 3.2em; 
+        margin-bottom: 20px; 
+        text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;">
+        🚀 About Me
+    </h1>
+    
+    <img src="{{ url_for('static', filename='portfolio.jpg') }}" alt="Subhendu Rath" 
+         style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover; 
+         box-shadow: 0 12px 30px rgba(0,255,255,0.5); margin-bottom: 30px; 
+         border: 4px solid #00ffff; transition: transform 0.3s ease;"
+         onmouseover="this.style.transform='scale(1.1)'" 
+         onmouseout="this.style.transform='scale(1)'">
+
+    <p style="
+        font-size: 1.4em; 
+        line-height: 1.7; 
+        background: rgba(255, 255, 255, 0.08); 
+        padding: 15px 20px; 
+        border-radius: 12px; 
+        box-shadow: inset 0 0 10px rgba(0,255,255,0.2);
+        backdrop-filter: blur(3px);
+    ">
+        Hello! I'm <strong>Subhendu Rath</strong>, a 3rd-year B.Tech student passionate about building modern web apps.
+    </p>
+
+    <h2 style="margin-top: 40px; color: #00ffff; text-shadow: 0 0 10px #00ffff;">🎓 Education</h2>
+    <ul style="list-style-type: '✔️ '; padding-left: 25px; font-size: 1.1em;">
+       <li><strong>Matriculation:</strong> Saraswati Vidya Mandir, Dihapadhala, Ganjam (2012-21)</li>
+       <li><strong>Intermediate:</strong> Nalanda Vidya Mandir, Berhampur, Ganjam (2021-23)</li>
+       <li><strong>Bachelor's Degree:</strong> GIET University, Gunupur (2023-Present)</li>
+    </ul>
+
+    <h2 style="margin-top: 40px; color: #00ffff; text-shadow: 0 0 10px #00ffff;">💼 Experience</h2>
+    <ul style="list-style-type: '💻 '; padding-left: 25px; font-size: 1.1em;">
+        <li>Python Developer Intern at <strong>Asirudh Software Pvt Ltd.</strong> (May 2025 - Present, Brahmapur, Hybrid)</li>
+        <li>Industrial AI Intern at <strong>Edu-Versity</strong> (June 2024 - July 2024, Remote)</li>
+    </ul>
+
+    <h2 style="margin-top: 40px; color: #00ffff; text-shadow: 0 0 10px #00ffff;">⚡ Skills</h2>
+    <ul style="list-style-type: '✨ '; padding-left: 25px; font-size: 1.1em;">
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React</li>
+        <li><strong>Backend:</strong> Python, Flask, Node.js</li>
+        <li><strong>Tools:</strong> Git, VS Code, Postman</li>
+    </ul>
+
+    <h2 style="margin-top: 40px; color: #00ffff; text-shadow: 0 0 10px #00ffff;">🏆 Achievements</h2>
+    <ul style="list-style-type: '🌟 '; padding-left: 25px; font-size: 1.1em;">
+        <li>Software Conceptual Design</li>
+        <li>Built multiple full-stack projects using Flask and MERN stack</li>
+        <li>Industrial Artificial Intelligence</li>
+    </ul>
+
+</section>
+{% endblock %}
